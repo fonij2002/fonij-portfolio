@@ -1,6 +1,5 @@
-import { useTranslation } from "react-i18next";
-import { buttonVariants } from "../../button";
 import { NavLink } from "react-router-dom";
+import { buttonVariants } from "../button";
 
 interface NavigationLinkProps {
   labelKey: string;
@@ -15,8 +14,6 @@ export const NavigationLink = ({
   onClick,
   disabled = false,
 }: NavigationLinkProps) => {
-  const { t } = useTranslation();
-
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     if (disabled) {
       e.preventDefault();
@@ -45,7 +42,7 @@ export const NavigationLink = ({
         ${disabled ? "opacity-50 pointer-events-none cursor-not-allowed" : ""}`
       }
     >
-      {t(`navbar.links.${labelKey}`)}
+      {labelKey}
     </NavLink>
   );
 };

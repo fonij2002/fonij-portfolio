@@ -1,12 +1,10 @@
 import { IconLogo } from "@/components/ui/custom";
-import { ROUTES, getNavLinks } from "@/configs/routes.config";
-import { ArrowRight, Menu, X } from "lucide-react";
+import { ROUTES } from "@/configs/routes.config";
+import { ArrowRight } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
-import { useTranslation } from "react-i18next";
 import { Link, matchPath, useLocation } from "react-router-dom";
 
 export const Header = () => {
-  const { t } = useTranslation("header");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
 
@@ -18,18 +16,9 @@ export const Header = () => {
 
   const shouldShowHeader = currentRoute?.nav !== false;
 
-  const navLinks = useMemo(() => {
-    return getNavLinks(ROUTES).filter((link) => link.to !== "/build-with-me");
-  }, []);
-
   useEffect(() => {
     setMobileMenuOpen(false);
   }, [location.pathname]);
-
-  const isActive = (path: string) => {
-    if (path === "/") return location.pathname === "/";
-    return !!matchPath({ path, end: path !== "/" }, location.pathname);
-  };
 
   if (!shouldShowHeader) {
     return null;
@@ -43,10 +32,10 @@ export const Header = () => {
         <div>
           <Link
             to="/build-with-me"
-            className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-white transition hover:bg-white/10"
+            className="inline-flex h-11 shrink-0 items-center justify-center gap-2 rounded-full border border-white/20 bg-white/10 px-5 text-sm font-semibold text-white shadow-md shadow-black/10 backdrop-blur-md transition-[background-color,border-color,transform] duration-200 hover:border-white/35 hover:bg-white/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-4 focus-visible:ring-offset-neutral-950 motion-safe:hover:-translate-y-0.5 sm:h-12 sm:px-6 sm:text-base"
           >
-            {t("cta_button")}
-            <ArrowRight className="h-4 w-4" />
+            Build with Me
+            <ArrowRight aria-hidden="true" className="size-4 sm:size-5" />
           </Link>
         </div>
       </div>

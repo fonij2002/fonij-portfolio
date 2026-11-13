@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowLeft, Sparkles } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export const NotFoundPage = () => {
@@ -20,17 +20,6 @@ export const NotFoundPage = () => {
           transition={{ duration: 0.55, ease: "easeOut" }}
           className="w-full max-w-3xl rounded-[2rem] border border-white/10 bg-white/5 p-6 text-center shadow-2xl shadow-black/30 backdrop-blur-xl sm:p-8 lg:p-10"
         >
-          <motion.div
-            initial={{ opacity: 0, y: 18, scale: 0.9 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            transition={{ duration: 0.55, delay: 0.08 }}
-            className="relative mx-auto mt-8 flex h-28 w-28 items-center justify-center"
-          >
-            <div className="relative flex h-24 w-24 items-center justify-center rounded-full border border-white/10 bg-white/6 shadow-xl shadow-black/20">
-              <Sparkles className="h-10 w-10 text-white" />
-            </div>
-          </motion.div>
-
           <motion.h1
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}

@@ -1,6 +1,5 @@
-export { LandingPage } from "./LandingPage";
 export { BuildWithMePage } from "./BuildWithMePage";
-export { BlogPostPage } from "./BlogPostPage";
+export { LandingPage } from "./LandingPage";
 export { NotFoundPage } from "./NotFoundPage";
 
 export { Layout } from "./Layout";

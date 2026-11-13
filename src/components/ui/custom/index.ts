@@ -1,51 +1,24 @@
 // -------------------- buttons --------------------
-export { ScrollToTop } from "./buttons/ScrollToTop";
+export { ScrollToTop } from "./ScrollToTop";
 
 // -------------------- links --------------------
-export { LinkSocial } from "./links/LinkSocial";
-export { LinkIcon } from "./links/LinkIcon";
+export { LinkIcon } from "./LinkIcon";
+export { LinkSocial } from "./LinkSocial";
+export { NavigationLink } from "./NavigationLink";
 
-export { NavigationLink } from "./links/NavigationLink";
 // -------------------- icons --------------------
-export { IconLogo } from "./icons/IconLogo";
-// export { PrivacyNoticeIcon } from "./icons/PrivacyNoticeIcon";
-// export { NumberedSectionHeader } from "./icons/NumberedSectionHeader";
-// export { StepIndicator } from "./icons/StepIndicator";
+export { IconLogo } from "./IconLogo";
 
 // -------------------- inputs --------------------
-// // number
-export { InputSelect } from "./inputs/InputSelect";
-// export { PhoneNumberInput } from "./inputs/number/PhoneNumberInput";
-// export { WeightInput } from "./inputs/number/WeightInput";
-
-// select
-// export { BirthYearInput } from "./inputs/select/BirthYearInput";
-// export { ChronicConditionsInput } from "./inputs/select/ChronicConditionsInput";
-// export { CountryInput } from "./inputs/select/CountryInput";
-// export { GenderInput } from "./inputs/select/GenderInput";
-// export { HealthGoalsInput } from "./inputs/select/HealthGoalsInput";
-// export { LanguageInput } from "./inputs/select/LanguageInput";
-// export { RelationInput } from "./inputs/select/RelationInput";
-// export { RepeatInput } from "./inputs/select/RepeatInput";
-
-// text
-// export { FormTextInput } from "./inputs/text/FormTextInput";
-
-// time
-// export { DateInput } from "./inputs/time/DateInput";
-// export { TimeInput } from "./inputs/time/TimeInput";
+export { InputSelect } from "./InputSelect";
 
 // -------------------- toggles --------------------
-export { LanguageToggle } from "./toggles/LanguageToggle";
-export { ThemeToggle } from "./toggles/ThemeToggle";
+export { ThemeToggle } from "./ThemeToggle";
 
 // -------------------- forms --------------------
-export { ChatBoxForm } from "./forms/ChatBoxForm";
-
-// -------------------- cards --------------------
-export { ArticleCard } from "./cards/ArticleCard";
+export { ChatBoxForm } from "./ChatBoxForm";
 
 // -------------------- containers --------------------
-export { ContainerResponsive } from "./containers/ContainerResponsive";
-export { ContainerWithBorder } from "./containers/ContainerWithBorder";
-export { ContainerTransparent } from "./containers/ContainerTransparent";
+export { ContainerResponsive } from "./ContainerResponsive";
+export { ContainerTransparent } from "./ContainerTransparent";
+export { ContainerWithBorder } from "./ContainerWithBorder";

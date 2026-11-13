@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui";
+import { Button } from "@/components/ui/button";
 import { socialLinkConfig } from "@/configs/brand.config";
 import type { SocialLink } from "@/types/social";
 

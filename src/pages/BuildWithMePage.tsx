@@ -1,6 +1,6 @@
+import { InputSelect } from "@/components/ui/custom";
 import { scopeOptions } from "@/data/collaboration_data";
 import type { FormState } from "@/types/collaboration";
-import { InputSelect } from "@/components/ui/custom";
 import { motion } from "framer-motion";
 import React, { useMemo, useState } from "react";
 
@@ -163,8 +163,7 @@ export const BuildWithMePage = () => {
               <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
                 <div>
                   <h2 className="mt-4 text-2xl font-semibold tracking-tight text-white sm:text-3xl">
-                    Let’s build something thoughtful, useful, and
-                    well-structured.
+                    Let’s build something useful and well-structured
                   </h2>
                   <p className="mt-3 max-w-2xl text-sm leading-7 text-neutral-400 sm:text-base">
                     Tell me a little about your project, and I’ll reach out soon

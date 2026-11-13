@@ -1,4 +1,4 @@
-import { LandingPage, BlogPostPage, BuildWithMePage } from "@/pages";
+import { BuildWithMePage, LandingPage } from "@/pages";
 
 type RouteConfig = {
   path: string;
@@ -25,12 +25,6 @@ export const ROUTES: RouteConfig[] = [
   {
     path: "/build-with-me",
     element: <BuildWithMePage />,
-    label: undefined,
-    nav: false,
-  },
-  {
-    path: "/blog/:slug",
-    element: <BlogPostPage />,
     label: undefined,
     nav: false,
   },

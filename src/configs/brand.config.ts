@@ -1,12 +1,13 @@
-import logoImage from "@/assets/images/brand-logo2.png";
+import logoImage from "@/assets/images/logo-light.png";
 import type { SocialLink } from "@/types/social";
 import {
   FaGithub,
   FaInstagram,
   FaLinkedin,
   FaTelegram,
+  FaXTwitter,
   FaYoutube,
-} from "react-icons/fa";
+} from "react-icons/fa6";
 
 export const brandConfig = {
   nameKey: "brand_name",
@@ -25,7 +26,7 @@ export const socialLinkConfig: SocialLink[] = [
   },
   {
     label: "Telegram",
-    href: "https://t.me/the_builder_notes",
+    href: "https://t.me/fonij2002",
     Icon: FaTelegram,
   },
   {
@@ -40,7 +41,12 @@ export const socialLinkConfig: SocialLink[] = [
   },
   {
     label: "Youtube",
-    href: "https://www.youtube.com/channel/UCLVGBHa2LaJsckKBl1cqK5Q",
+    href: "https://www.youtube.com/@Fonij2002",
     Icon: FaYoutube,
+  },
+  {
+    label: "X",
+    href: "https://x.com/fonij2002",
+    Icon: FaXTwitter,
   },
 ].filter((social) => Boolean(social.href));

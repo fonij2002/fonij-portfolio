@@ -7,7 +7,6 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { cn } from "@/lib/utils";
-import { useTranslation } from "react-i18next";
 
 export type SelectOption = {
   label: string;
@@ -42,8 +41,6 @@ export const InputSelect = ({
   className,
   triggerClassName,
 }: InputSelectProps) => {
-  const { i18n } = useTranslation();
-
   return (
     <div className={cn("space-y-2", className)}>
       {label && (
@@ -52,12 +49,7 @@ export const InputSelect = ({
         </Label>
       )}
 
-      <Select
-        value={value}
-        onValueChange={onChange}
-        dir={i18n.dir()}
-        disabled={disabled}
-      >
+      <Select value={value} onValueChange={onChange} disabled={disabled}>
         <SelectTrigger
           id={id}
           className={cn(

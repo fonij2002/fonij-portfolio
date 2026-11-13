@@ -1,11 +1,5 @@
-import { Hero, ProjectPreview } from "@/components";
+import { Hero } from "@/components";
 
 export const LandingPage = () => {
-  return (
-    <>
-      <Hero />
-      <ProjectPreview />
-      {/* <BlogCardList /> */}
-    </>
-  );
+  return <Hero />;
 };
