@@ -1,8 +1,24 @@
 import { InputSelect } from "@/components/ui/custom";
-import { scopeOptions } from "@/data/collaboration_data";
-import type { FormState } from "@/types/collaboration";
 import { motion } from "framer-motion";
 import React, { useMemo, useState } from "react";
+
+type FormState = {
+  name: string;
+  email: string;
+  urgency: string;
+  scope: string[];
+  projectSummary: string;
+};
+
+const scopeOptions = [
+  "API / Backend",
+  "Landing Page",
+  "Company / Personal Website",
+  "Dashboard / Admin Panel",
+  "Telegram / Bale Bot",
+  "Marketplace",
+  "Mobile app",
+];
 
 const initialForm: FormState = {
   name: "",
